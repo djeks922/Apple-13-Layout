@@ -30,7 +30,7 @@ i{
 }
 .header__navigation{
     margin: 0 auto;
-    width: 78vw;
+    width: 65vw;
 }
 .header__navigation-list{
     display: flex;
@@ -55,7 +55,7 @@ border-bottom:1px solid rgba(128, 128, 128, 0.678);
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 78vw;
+    width: 65vw;
 }
 .navigation__sticky h4{
     font-family: var(--secondary-font);
@@ -69,7 +69,7 @@ border-bottom:1px solid rgba(128, 128, 128, 0.678);
     width: 400px;
     justify-content: space-between;
     list-style: none;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     font-size: 1.1rem;
 }
 .navigation__sticky-list--items:hover{
@@ -92,3 +92,24 @@ border-bottom:1px solid rgba(128, 128, 128, 0.678);
 }
 
 /* Sticky Nav ends */
+
+/* Upper Info */
+
+.upper-information{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.upper-information p{
+    width: 70%;
+    font-weight: 500;
+    color: #1d1d1fcc;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 6rem;
+}
+#info-span:hover{
+    padding: 0 -5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
