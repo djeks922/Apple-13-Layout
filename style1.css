@@ -1,5 +1,6 @@
 :root{
     --main-font:'Montserrat', sans-serif;
+    --secondary-font: system-ui;
 }
 
 *{
@@ -18,6 +19,7 @@ body{
     width: 100vw;
 
 }
+/* Header Nav starts */
 i{
     font-size: 2rem;
     color: #f5f5f7c4;
@@ -28,7 +30,7 @@ i{
 }
 .header__navigation{
     margin: 0 auto;
-    width: 1000px;
+    width: 78vw;
 }
 .header__navigation-list{
     display: flex;
@@ -42,3 +44,51 @@ i{
     color: #f5f5f7c7;
     font-size: 1.3rem;
 }
+/* Header Nav ends */
+
+/* Sticky Nav starts */
+.navigation__sticky-container{
+width: 100%;
+border-bottom:1px solid rgba(128, 128, 128, 0.678);
+}
+.navigation__sticky{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 78vw;
+}
+.navigation__sticky h4{
+    font-family: var(--secondary-font);
+    font-size: 2.1rem;
+    font-weight: 600;
+    align-self: center;
+}
+.navigation__sticky-list{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 2rem 0;
+    font-size: 1.1rem;
+}
+.navigation__sticky-list--items:hover{
+    color: #06c;
+    cursor: pointer;
+}
+#overview-item{
+    opacity: 0.56;
+}
+#buy-button{
+    padding: 5px 10px;
+    border-radius: 11px;
+    background-color: #0071e3;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+#buy-button:hover{
+    background-color: #0071e3e1;
+}
+
+/* Sticky Nav ends */
