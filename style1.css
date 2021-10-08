@@ -141,7 +141,7 @@ i {
   height: 120vh;
   background-color: #35283c;
 }
-.fullscreen-black{
+.fullscreen-black {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -152,11 +152,13 @@ i {
 
 #intro-video {
   width: 100%;
-  height: auto;
+  /* height: 100%; */
 }
 #section__intro-poster {
   opacity: 0;
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 25%;
   left: 3%;
   transition: all 0.4s ease-out;
@@ -165,9 +167,118 @@ i {
 /*  */
 
 .section__color-representation {
+  position: relative;
   margin-top: 88vh;
   width: 100vw;
-  height: 200vh;
-  z-index: 5;
+  height: auto;
+  z-index: 1;
   background-color: #12213a;
+}
+
+.color-representation-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.color-representation-content {
+  padding-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  padding-bottom: 8%;
+  /* font-size: 6.4rem; */
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16vh;
+  opacity: 0;
+}
+.features p {
+  font-size: 64px;
+  text-align: center;
+  line-height: 1.0625;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  letter-spacing: -0.05em;
+  padding: 0 85px;
+}
+.color-representation-content--3 p {
+  padding: 0 171px;
+}
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+.color-representation-lower {
+  position: relative;
+
+  height: 1474px;
+  width: 100%;
+  z-index: 0;
+}
+.color-representation-lower-media {
+  position: absolute;
+  top: -30%;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/img/hero_2_static__w0gvqnaqsjm2_xlarge.jpg);
+  background-size: 3008px 1774px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.color-representation-lower-content {
+  position: absolute;
+  width: 80%;
+  margin: 0 10%;
+  height: 100%;
+  top: 60%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lower-content-headline h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  text-align: center;
+}
+.lower-content-headline h2 {
+  font-size: 12rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.lower-content-paragraph p {
+  font-size: 2.8rem;
+  color: rgba(255, 255, 255, 0.56);
+  /* line-height: 1.1428571429; */
+  font-weight: 600;
+  /* letter-spacing: 0.007em; */
+  text-align: center;
+}
+.lower-content-paragraph ul {
+  list-style: none;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.lower-content-paragraph ul li {
+  font-size: 2.8rem;
+  color: rgba(255, 255, 255, 0.56);
+  /* line-height: 1.1428571429; */
+  font-weight: 600;
+  /* letter-spacing: 0.007em; */
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
 }
