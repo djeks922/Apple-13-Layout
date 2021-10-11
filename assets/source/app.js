@@ -8,7 +8,7 @@ timeline
     .add(tween2);
 
 // Initialise ScrollMagic Scene
-const scene = new ScrollMagic.Scene({
+const scene111 = new ScrollMagic.Scene({
     triggerElement: "#first",
     triggerHook: 0.9,
     duration: 600
@@ -26,7 +26,7 @@ timeline2
     .add(tween3)
     .add(tween4);
 
-const scene2 = new ScrollMagic.Scene({
+const scene112 = new ScrollMagic.Scene({
     triggerElement: "#second",
     triggerHook: 0.8,
     duration: 900
@@ -45,7 +45,7 @@ timeline3
     .add(tween6);
 
 // Initialise ScrollMagic Scene
-const scene3 = new ScrollMagic.Scene({
+const scene113 = new ScrollMagic.Scene({
     triggerElement: "#third",
     triggerHook: 0.9,
     duration: 600
@@ -64,7 +64,7 @@ timeline4
     .add(tween8);
 
 // Initialise ScrollMagic Scene
-const scene4 = new ScrollMagic.Scene({
+const scene114 = new ScrollMagic.Scene({
     triggerElement: "#fourth",
     triggerHook: 0.8,
     duration: 900
@@ -82,7 +82,7 @@ timeline5
     .add(tween10);
 
 // Initialise ScrollMagic Scene
-const scene5 = new ScrollMagic.Scene({
+const scene115 = new ScrollMagic.Scene({
     triggerElement: "#fifth",
     triggerHook: 0.9,
     duration: 600
@@ -100,7 +100,7 @@ timeline6
     .add(tween11);
 
 // Initialise ScrollMagic Scene
-const scene6 = new ScrollMagic.Scene({
+const scene116 = new ScrollMagic.Scene({
     triggerElement: "#howdidwe",
     triggerHook: 0.9,
     duration: '100%'
@@ -118,7 +118,7 @@ timeline7
     .add(tween12);
 
 // Initialise ScrollMagic Scene
-const scene7 = new ScrollMagic.Scene({
+const scene117 = new ScrollMagic.Scene({
     triggerElement: "#howdidImage",
     triggerHook: 1,
     duration: '100%',
@@ -141,7 +141,7 @@ timeline8
     .add(tween16);
 
 // Initialise ScrollMagic Scene
-const scene8 = new ScrollMagic.Scene({
+const scene118 = new ScrollMagic.Scene({
     triggerElement: "#howdidImage",
     triggerHook: 2,
     duration: '100%',
@@ -153,13 +153,13 @@ const scene8 = new ScrollMagic.Scene({
 
 var timeline9 = new TimelineMax();
 var tween17 = TweenMax.from("#howdidImage", 2, { rotation: 0, });
-var tween18 = TweenMax.to("#howdidImage", 2, { rotation: -10, });
+var tween18 = TweenMax.to("#howdidImage", 2, { rotation: 0, });
 timeline9
     .add(tween17)
     .add(tween18);
 
 // Initialise ScrollMagic Scene
-const scene9 = new ScrollMagic.Scene({
+const scene119 = new ScrollMagic.Scene({
     triggerElement: "#howdidImage",
     triggerHook: 2,
     duration: "100%",
