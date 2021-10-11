@@ -1,0 +1,254 @@
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: system-ui;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--main-font);
+}
+
+.section__spec-information {
+  height: 200vh;
+  padding: 120px 235px;
+}
+
+.specFirstColumn,
+.specSecondColumn {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s;
+}
+
+.colorOption {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 99 !important;
+  position: -webkit-sticky;
+  height: 10px;
+}
+
+.pinkOption {
+  width: 38px;
+  height: 38px;
+  margin: 5px;
+  background-color: #faddd7;
+  border-radius: 50px;
+  outline: 1px solid #0071e3;
+  border: 4px solid white;
+}
+
+.blueOption,
+.blackOption,
+.silverOption,
+.redOption {
+  width: 38px;
+  height: 38px;
+  margin: 5px;
+  border-radius: 50px;
+  margin-top: 14px;
+  transition: 0.6s;
+}
+
+.selected {
+  border: 3px solid white;
+  outline: 3px solid blue;
+  box-shadow: 0px 0px 15px 5px rgba(0, 7, 255, 0.59);
+}
+
+.colorOption :nth-child(2) {
+  background-color: #276787;
+}
+
+.colorOption :nth-child(3) {
+  background-color: black;
+}
+
+.colorOption :nth-child(4) {
+  background-color: #faf6f2;
+}
+
+.colorOption :nth-child(5) {
+  background-color: #bf0013;
+}
+
+.newPinkFinish {
+  width: 426px;
+  height: 560px;
+  border-radius: 30px;
+  background-color: #35283c;
+  background-image: url("https://www.apple.com/v/iphone-13/c/images/overview/design/pink_finish__f0iydhc82r2a_large.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: white;
+  padding: 36px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.15;
+  transition: 0.6s;
+}
+
+.newPinkFinish span:nth-child(1) {
+  color: #fec2eb;
+}
+
+.ceramicShield {
+  position: relative;
+  width: 526px;
+  height: 560px;
+  border-radius: 30px;
+  background-color: #35283c;
+  font-size: 40px;
+  padding: 36px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url("https://www.apple.com/v/iphone-13/c/images/overview/design/pink_ceramic_shield__dnqj5p4xc3e6_large.jpg");
+  transition: 0.6s;
+}
+
+.ceramicShield img {
+  position: absolute;
+  bottom: 35%;
+  left: 7%;
+}
+
+.ceramicShield span {
+  color: #fec2eb;
+}
+
+.ceramicShield h4 {
+  transform: translate(0px, 360px);
+}
+
+.specSecondColumn {
+  margin-top: 24px;
+  margin-left: 75px;
+  height: 1200px;
+}
+
+.specSizes {
+  position: relative;
+  width: 650px;
+  height: 850px;
+  border-radius: 30px;
+  background-color: #35283c;
+  padding: 70px 60px;
+  color: white;
+  transition: 0.6s;
+}
+
+.specWater {
+  width: 650px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: #35283c;
+  margin-left: 75px;
+  transform: translateY(-328px);
+  background-image: url("https://www.apple.com/v/iphone-13/c/images/overview/design/water_resistant_pink__bji03pcves5e_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specDurable {
+  position: relative;
+  width: 320px;
+  height: 1074px;
+  border-radius: 30px;
+  padding: 60px;
+  background-color: #35283c;
+  background-image: url("https://www.apple.com/v/iphone-13/c/images/overview/design/pink_flat_edge__fnclx6jpolm6_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: white;
+  transition: 0.6;
+}
+
+.specDurable {
+  text-align: center;
+}
+
+.specDurable h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.specDurable span {
+  color: #fec2eb;
+}
+
+.specSizesTogether {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.specSizes13 h3 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.specSizesMini {
+  transform: translateY(15px);
+}
+
+.specSizesMini h3 {
+  font-size: 22px;
+  transform: translateY(15px);
+}
+
+.specSizesTogether img {
+  margin-bottom: 30px;
+}
+
+.specSizesTogether strong {
+  font-size: 40px;
+  color: #fec2eb;
+}
+
+.specSuper {
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  margin-top: 20px;
+  /* letter-spacing: 0.007em; */
+}
+
+.section__huge-camera {
+  position: relative;
+  margin-top: 500px;
+  height: 185vh;
+  background-color: #35283c;
+  color: white;
+  padding: 150px 270px;
+  overflow: hidden;
+}
+
+.section__huge-camera h3 {
+  font-size: 110px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.section__huge-camera span {
+  color: #fec2eb;
+}
+
+#howdidImage {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+#thinking {
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  bottom: 24%;
+  left: 44%;
+}

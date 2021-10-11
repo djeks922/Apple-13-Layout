@@ -1,88 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fb7646246f.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apple-13</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-list--items">
-            <i class="fab fa-apple"></i>
-          </li>
-          <li class="header__navigation-list--items">Store</li>
-          <li class="header__navigation-list--items">Mac</li>
-          <li class="header__navigation-list--items">iPad</li>
-          <li class="header__navigation-list--items">iPhone</li>
-          <li class="header__navigation-list--items">Watch</li>
-          <li class="header__navigation-list--items">TV</li>
-          <li class="header__navigation-list--items">Music</li>
-          <li class="header__navigation-list--items">Support</li>
-          <li class="header__navigation-list--items">
-            <i class="fas fa-search"></i>
-          </li>
-          <li class="header__navigation-list--items">
-            <i class="fas fa-shopping-bag"></i>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <div class="navigation__sticky-container">
-      <nav class="navigation__sticky">
-        <h4>iPhone 13</h4>
-        <ul class="navigation__sticky-list">
-          <li class="navigation__sticky-list--items" id="overview-item">
-            Overview
-          </li>
-          <li class="navigation__sticky-list--items">Switching to iPhone</li>
-          <li class="navigation__sticky-list--items">Tech Specs</li>
-          <li class="navigation__sticky-list--items" id="buy-button">Buy</li>
-        </ul>
-      </nav>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fb7646246f.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple-13</title>
+</head>
 
-    <div class="upper-information">
-      <p>
-        Save on your new iPhone with special carrier deals at Apple.
-        <span id="info-span" style="color: #06c"
-          >Find your deal<i
-            style="
+<body>
+  <header class="header">
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-list--items">
+          <i class="fab fa-apple"></i>
+        </li>
+        <li class="header__navigation-list--items">Store</li>
+        <li class="header__navigation-list--items">Mac</li>
+        <li class="header__navigation-list--items">iPad</li>
+        <li class="header__navigation-list--items">iPhone</li>
+        <li class="header__navigation-list--items">Watch</li>
+        <li class="header__navigation-list--items">TV</li>
+        <li class="header__navigation-list--items">Music</li>
+        <li class="header__navigation-list--items">Support</li>
+        <li class="header__navigation-list--items">
+          <i class="fas fa-search"></i>
+        </li>
+        <li class="header__navigation-list--items">
+          <i class="fas fa-shopping-bag"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="navigation__sticky-container">
+    <nav class="navigation__sticky">
+      <h4>iPhone 13</h4>
+      <ul class="navigation__sticky-list">
+        <li class="navigation__sticky-list--items" id="overview-item">
+          Overview
+        </li>
+        <li class="navigation__sticky-list--items">Switching to iPhone</li>
+        <li class="navigation__sticky-list--items">Tech Specs</li>
+        <li class="navigation__sticky-list--items" id="buy-button">Buy</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="upper-information">
+    <p>
+      Save on your new iPhone with special carrier deals at Apple.
+      <span id="info-span" style="color: #06c">Find your deal<i style="
               font-size: 0.8rem;
               color: rgba(0, 102, 204, 0.719);
               margin-left: 4px;
-            "
-            class="fas fa-chevron-right"
-          ></i
-        ></span>
-      </p>
+            " class="fas fa-chevron-right"></i></span>
+    </p>
+  </div>
+
+  <section class="section__intro">
+
+  </section>
+
+  <section class="section__color-representation" style="height: 100vh;">
+  </section>
+
+  <section class="section__spec-information">
+
+    <div class="specFirstColumn">
+
+      <div class="colorOption">
+        <div class="pinkOption"></div>
+        <div class="blueOption" id="blueOption" onclick="blueSelected()"></div>
+        <div class="blackOption" id="blackOption" onclick="blackSelected()"></div>
+        <div class="silverOption" id="silverOption" onclick="silverSelected()"></div>
+        <div class="redOption" id="redOption" onclick="redSelected()"></div>
+      </div>
+
+      <div class="newPinkFinish" id="first">
+        <h4><span id="firstSpan">New</span> <br>
+          <span id="firstColor">Pink</span> <br>
+          finish
+        </h4>
+      </div>
+
+      <div class="ceramicShield" id="second">
+        <img
+          src="https://www.apple.com/v/iphone-13/c/images/overview/design/icon_ceramic_shield__djb87ha8lqc2_large.png"
+          alt="">
+        <h4>Ceramic Shield, <br> <span id="secondSpan">tougher</span> than any <br> smartphone glass</h4>
+      </div>
+
     </div>
 
-    <section class="section__intro">
+    <div class="specSecondColumn">
+      <div class="specSizes" id="third">
 
-    </section>
+        <div class="specSizesTogether">
 
-    <section class="section__spec-information">
+          <div class="specSizes13">
+            <h3>iPhone 13</h3>
+            <div class="specSizes13Img">
+              <img id="thirdimg1"
+                src="https://www.apple.com/v/iphone-13/c/images/overview/design/pink_iphone_13__egoff4sr4fma_large.jpg"
+                alt="">
+            </div>
+            <strong id="thirdSpan" class="specScreen">6.1<span>″</span></strong>
+          </div>
 
-    </section>
+          <div class="specSizesMini">
+            <h3>iPhone 13 Mini</h3>
+            <div class="specSizesMiniImg">
+              <img id="thirdimg2"
+                src="https://www.apple.com/v/iphone-13/c/images/overview/design/pink_iphone_13_mini__fxll8di8wgqe_large.jpg"
+                alt="">
+            </div>
+            <strong id="thirdSpan2" class="specScreen">5.4<span>″</span></strong>
+          </div>
 
-    <section class="section__color-representation">
-      
-    </section>
-  </body>
+        </div>
+
+        <h3 class="specSuper">Super Retina XDR display<sup>2</sup></h3>
+
+      </div>
+
+      <div class="specDurable" id="fourth">
+        <h3><span id="fourthSpan">Durable</span> <br>
+          flat-edge <br>
+          design</h3>
+      </div>
+    </div>
+
+    <div class="specWater" id="fifth">
+    </div>
+
+  </section>
+
+  <section class="section__huge-camera">
+    <h3 id="howdidwe">How did we get such a <span>huge camera upgrade</span> to fit?
+    </h3>
+    <img id="howdidImage" src="./assets/img/upgrade_diagonal_static__bzgjgic29336_large-removebg.png" alt="">
+    <p id="thinking">By thinking diagonally</p>
+  </section>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+  <script src="./assets/source/app.js"></script>
+
+</body>
+
 </html>
