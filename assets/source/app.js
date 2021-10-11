@@ -47,18 +47,19 @@ timeline3
 // Initialise ScrollMagic Scene
 const scene113 = new ScrollMagic.Scene({
     triggerElement: "#third",
-    triggerHook: 0.9,
-    duration: 600
+    triggerHook: 2,
+    duration: "100%"
 })
     .setTween(timeline3)
     .addIndicators({ name: "3, #600" })
     .addTo(controller);
 
 
+
 // New Timeline and Scene
 var timeline4 = new TimelineMax();
-var tween7 = TweenMax.from("#fourth", 3, { y: 200, opacity: 0, });
-var tween8 = TweenMax.to("#fourth", 3, { y: 0, opacity: 1, });
+var tween7 = TweenMax.from("#fourth", 2, { y: 150, opacity: 0, });
+var tween8 = TweenMax.to("#fourth", 2, { y: 0, opacity: 1, });
 timeline4
     .add(tween7)
     .add(tween8);
@@ -66,12 +67,20 @@ timeline4
 // Initialise ScrollMagic Scene
 const scene114 = new ScrollMagic.Scene({
     triggerElement: "#fourth",
-    triggerHook: 0.8,
-    duration: 900
+    triggerHook: 2,
+    duration: '100%',
+    offset: 100
 })
     .setTween(timeline4)
     .addIndicators({ name: "4, #900" })
     .addTo(controller);
+
+
+
+
+
+
+
 
 // New Timeline and Scene
 var timeline5 = new TimelineMax();
@@ -95,9 +104,11 @@ const scene115 = new ScrollMagic.Scene({
 var timeline6 = new TimelineMax();
 var tween10 = TweenMax.from("#howdidwe", 2, { y: 150, opacity: 0, });
 var tween11 = TweenMax.to("#howdidwe", 2, { y: 0, opacity: 1 });
+var tween32 = TweenMax.to("#howdidwe", 2, { y: 10 });
 timeline6
     .add(tween10)
-    .add(tween11);
+    .add(tween11)
+    .add(tween32);
 
 // Initialise ScrollMagic Scene
 const scene116 = new ScrollMagic.Scene({

@@ -9,8 +9,9 @@ body {
 }
 
 .section__spec-information {
-  height: 200vh;
+  height: 250vh;
   padding: 120px 235px;
+  background-color: white;
 }
 
 .specFirstColumn,
@@ -220,7 +221,7 @@ body {
 
 .section__huge-camera {
   position: relative;
-  margin-top: 500px;
+  padding-top: 500px;
   height: 185vh;
   background-color: #35283c;
   color: white;
@@ -232,6 +233,7 @@ body {
   font-size: 110px;
   line-height: 1;
   font-weight: 600;
+  padding-top: 20px;
 }
 
 .section__huge-camera span {
