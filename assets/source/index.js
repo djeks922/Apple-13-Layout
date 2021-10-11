@@ -1,53 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
   const controller = new ScrollMagic.Controller();
 
-  const timeline1 = new gsap.timeline({
+  const timline1 = new gsap.timeline({
     defaults: {
       duration: 1, // sets the default duration of each tween to 1s
       transformOrigin: "center", // sets default transform-origin to center
       ease: "ease", // sets the default animation timeline to ease
     },
   });
-  timeline1
+  timline1
     .to(".upper-information", { y: "49px" })
     .to(".upper-information", { backgroundColor: "white" });
 
-  const timeline2 = new gsap.timeline({
+  const timline2 = new gsap.timeline({
       defaults: {
         duration: 1, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
         ease: "ease", // sets the default animation timeline to ease
       },
     }),
-    timeline4 = new gsap.timeline({
+    timline4 = new gsap.timeline({
       defaults: {
         duration: 1, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
         ease: "ease", // sets the default animation timeline to ease
       },
     }),
-    timeline5 = new gsap.timeline({
+    timline5 = new gsap.timeline({
       defaults: {
         duration: 1, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
         ease: "ease", // sets the default animation timeline to ease
       },
     }),
-    timeline6 = new gsap.timeline({
+    timline6 = new gsap.timeline({
       defaults: {
         duration: 1, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
         ease: "ease", // sets the default animation timeline to ease
       },
     });
-  timeline2.to(".color-representation-content--1", { opacity: 1, y: -50 });
-  timeline4
+  timline2.to(".color-representation-content--1", { opacity: 1, y: -50 });
+  timline4
     .to(".color-representation-content--2", { opacity: 1, y: -50 })
     .to(".color-representation-content--1", { opacity: 0 }, "-=0.3");
-  timeline5
+  timline5
     .to(".color-representation-content--3", { opacity: 1, y: -50 })
     .to(".color-representation-content--2", { opacity: 0 }, "-=0.3");
-  timeline6
+  timline6
     .to(".color-representation-content--4", { opacity: 1, y: -50 })
     .to(".color-representation-content--3", { opacity: 0 }, "-=0.3");
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let img = document.getElementById("section__intro-poster");
     img.style.cssText = "opacity: 1; object-fit : cover";
 
-    const timeline3 = new gsap.timeline({
+    const timline3 = new gsap.timeline({
       defaults: {
         // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
-    timeline3
+    timline3
       .to(".section__intro-video", {
         scale: 1.02,
       })
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       triggerHook: 1,
       duration: 300,
     })
-      .setTween(timeline3) // This method will bind our GSAP Animation with our ScrollMagic Scene
+      .setTween(timline3) // This method will bind our GSAP Animation with our ScrollMagic Scene
       // .addIndicators({name: "intro (duration: 300)"})
       .addTo(controller); // This method will add the ScrollMagic controller into our ScrollMagic scene
   };
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.7,
     duration: 300,
   })
-    .setTween(timeline2) // This method will bind our GSAP Animation with our ScrollMagic Scene
+    .setTween(timline2) // This method will bind our GSAP Animation with our ScrollMagic Scene
     // .addIndicators({name: "div1 (duration: 300)"})
     .addTo(controller) // This method will add the ScrollMagic controller into our ScrollMagic scene
     .reverse(true);
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.7,
     duration: 300,
   })
-    .setTween(timeline4) // This method will bind our GSAP Animation with our ScrollMagic Scene
+    .setTween(timline4) // This method will bind our GSAP Animation with our ScrollMagic Scene
     // .addIndicators({name: "div2 (duration: 300)"})
     .addTo(controller) // This method will add the ScrollMagic controller into our ScrollMagic scene
     .reverse(true);
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.7,
     duration: 300,
   })
-    .setTween(timeline5) // This method will bind our GSAP Animation with our ScrollMagic Scene
+    .setTween(timline5) // This method will bind our GSAP Animation with our ScrollMagic Scene
     // .addIndicators({name: "div3 (duration: 300)"})
     .addTo(controller) // This method will add the ScrollMagic controller into our ScrollMagic scene
     .reverse(true);
@@ -125,28 +125,28 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.7,
     duration: 300,
   })
-    .setTween(timeline6) // This method will bind our GSAP Animation with our ScrollMagic Scene
+    .setTween(timline6) // This method will bind our GSAP Animation with our ScrollMagic Scene
     // .addIndicators({name: "div4 (duration: 300)"})
     .addTo(controller) // This method will add the ScrollMagic controller into our ScrollMagic scene
     .reverse(true);
 
   // LOWER CONTENT
 
-  const timeline7 = new gsap.timeline({
+  const timline7 = new gsap.timeline({
       default: {
         duration: 3, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
         ease: "ease", // sets the default animation timeline to ease
       },
     });
-   const timeline8 = new gsap.timeline({
+   const timline8 = new gsap.timeline({
       default: {
         duration: 3, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
         ease: "ease", // sets the default animation timeline to ease
       },
     });
-   const timeline9 = new gsap.timeline({
+   const timline9 = new gsap.timeline({
       default: {
         duration: 3, // sets the default duration of each tween to 1s
         transformOrigin: "center", // sets default transform-origin to center
@@ -154,16 +154,16 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
-  timeline7.to("#headline1", {
+  timline7.to("#headline1", {
     opacity: 1,
     y: 0,
 	
   });
-  timeline8.to("#headline2", {
+  timline8.to("#headline2", {
     opacity: 1,
     y: 0,
   });
-  timeline9.to(".lower-content-paragraph", {
+  timline9.to(".lower-content-paragraph", {
     opacity: 1,
     y: 0,
   });
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerElement: ".color-representation-lower-content",
     triggerHook: 0.5,
   })
-    .setTween(timeline7)
+    .setTween(timline7)
     .addIndicators({ name: "headine1 (duration: 400)" })
     .addTo(controller)
     .reverse(true);
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerElement: ".color-representation-lower-content",
     triggerHook: 0.4,
   })
-    .setTween(timeline8)
+    .setTween(timline8)
     .addIndicators({ name: "headine2 (duration: 400)" })
     .addTo(controller)
     .reverse(true);
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerElement: ".color-representation-lower-content",
     triggerHook: 0.3,
   })
-    .setTween(timeline9)
+    .setTween(timline9)
     .addIndicators({ name: "paragraph (duration: 400)" })
     .addTo(controller)
     .reverse(true);
