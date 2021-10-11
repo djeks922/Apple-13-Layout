@@ -1,88 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fb7646246f.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apple-13</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-list--items">
-            <i class="fab fa-apple"></i>
-          </li>
-          <li class="header__navigation-list--items">Store</li>
-          <li class="header__navigation-list--items">Mac</li>
-          <li class="header__navigation-list--items">iPad</li>
-          <li class="header__navigation-list--items">iPhone</li>
-          <li class="header__navigation-list--items">Watch</li>
-          <li class="header__navigation-list--items">TV</li>
-          <li class="header__navigation-list--items">Music</li>
-          <li class="header__navigation-list--items">Support</li>
-          <li class="header__navigation-list--items">
-            <i class="fas fa-search"></i>
-          </li>
-          <li class="header__navigation-list--items">
-            <i class="fas fa-shopping-bag"></i>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <div class="navigation__sticky-container">
-      <nav class="navigation__sticky">
-        <h4>iPhone 13</h4>
-        <ul class="navigation__sticky-list">
-          <li class="navigation__sticky-list--items" id="overview-item">
-            Overview
-          </li>
-          <li class="navigation__sticky-list--items">Switching to iPhone</li>
-          <li class="navigation__sticky-list--items">Tech Specs</li>
-          <li class="navigation__sticky-list--items" id="buy-button">Buy</li>
-        </ul>
-      </nav>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fb7646246f.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple-13</title>
+</head>
 
-    <div class="upper-information">
-      <p>
-        Save on your new iPhone with special carrier deals at Apple.
-        <span id="info-span" style="color: #06c"
-          >Find your deal<i
-            style="
+<body>
+  <header class="header">
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-list--items">
+          <i class="fab fa-apple"></i>
+        </li>
+        <li class="header__navigation-list--items">Store</li>
+        <li class="header__navigation-list--items">Mac</li>
+        <li class="header__navigation-list--items">iPad</li>
+        <li class="header__navigation-list--items">iPhone</li>
+        <li class="header__navigation-list--items">Watch</li>
+        <li class="header__navigation-list--items">TV</li>
+        <li class="header__navigation-list--items">Music</li>
+        <li class="header__navigation-list--items">Support</li>
+        <li class="header__navigation-list--items">
+          <i class="fas fa-search"></i>
+        </li>
+        <li class="header__navigation-list--items">
+          <i class="fas fa-shopping-bag"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="navigation__sticky-container">
+    <nav class="navigation__sticky">
+      <h4>iPhone 13</h4>
+      <ul class="navigation__sticky-list">
+        <li class="navigation__sticky-list--items" id="overview-item">
+          Overview
+        </li>
+        <li class="navigation__sticky-list--items">Switching to iPhone</li>
+        <li class="navigation__sticky-list--items">Tech Specs</li>
+        <li class="navigation__sticky-list--items" id="buy-button">Buy</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="upper-information" id="upper-info1">
+    <p>
+      Save on your new iPhone with special carrier deals at Apple.
+      <span id="info-span" style="color: #06c">Find your deal<i style="
               font-size: 0.8rem;
               color: rgba(0, 102, 204, 0.719);
               margin-left: 4px;
-            "
-            class="fas fa-chevron-right"
-          ></i
-        ></span>
-      </p>
+            " class="fas fa-chevron-right"></i></span>
+    </p>
+  </div>
+
+  <section class="section__intro">
+    <div class="section__intro-video">
+      <video id="intro-video" autoplay muted>
+        <source
+          src="https://www.apple.com/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/hero/large_2x.mp4"
+          type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <img src="./assets/img/apple-intro-image.jpg" id="section__intro-poster" />
+    </div>
+    <div class="fullscreen-black"></div>
+  </section>
+
+  <section class="section__color-representation">
+    <div class="color-representation-wrapper">
+      <div class="color-representation-content">
+        <div class="color-representation-content--1 features">
+          <div class="icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <clipPath id="__lottie_element_5">
+                  <rect width="212" height="212" x="0" y="0"></rect>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#__lottie_element_5)">
+                <g transform="matrix(1.9199999570846558,0,0,1.9199999570846558,106,107.06199645996094)" opacity="1"
+                  style="display: block;">
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                      stroke="rgb(255,168,171)" stroke-opacity="1" stroke-width="5"
+                      d=" M0,-15.125 C8.071537971496582,-15.125 14.625,-8.571537971496582 14.625,-0.5 C14.625,7.571537494659424 8.071537971496582,14.125 0,14.125 C-8.071537971496582,14.125 -14.625,7.571537494659424 -14.625,-0.5 C-14.625,-8.571537971496582 -8.071537971496582,-15.125 0,-15.125z">
+                    </path>
+                  </g>
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                      stroke="rgb(255,168,171)" stroke-opacity="1" stroke-width="5"
+                      d=" M0,-15.125 C8.071537971496582,-15.125 14.625,-8.571537971496582 14.625,-0.5 C14.625,7.571537494659424 8.071537971496582,14.125 0,14.125 C-8.071537971496582,14.125 -14.625,7.571537494659424 -14.625,-0.5 C-14.625,-8.571537971496582 -8.071537971496582,-15.125 0,-15.125z">
+                    </path>
+                  </g>
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                      stroke="rgb(255,168,171)" stroke-opacity="1" stroke-width="5"
+                      d=" M22,-13.5 C22.827850341796875,-13.5 23.5,-12.827850341796875 23.5,-12 C23.5,-11.172149658203125 22.827850341796875,-10.5 22,-10.5 C21.172149658203125,-10.5 20.5,-11.172149658203125 20.5,-12 C20.5,-12.827850341796875 21.172149658203125,-13.5 22,-13.5z">
+                    </path>
+                    <path fill="rgb(255,168,171)" fill-opacity="1"
+                      d=" M22,-13.5 C22.827850341796875,-13.5 23.5,-12.827850341796875 23.5,-12 C23.5,-11.172149658203125 22.827850341796875,-10.5 22,-10.5 C21.172149658203125,-10.5 20.5,-11.172149658203125 20.5,-12 C20.5,-12.827850341796875 21.172149658203125,-13.5 22,-13.5z">
+                    </path>
+                  </g>
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"
+                      stroke="rgb(255,168,171)" stroke-opacity="1" stroke-width="5"
+                      d=" M-4.078000068664551,23.5 C-17.601999282836914,23.5 -30,23.5 -30,23.5 C-33.31399917602539,23.5 -36,20.81399917602539 -36,17.5 C-36,17.5 -36,-17.5 -36,-17.5 C-36,-20.81399917602539 -33.31399917602539,-23.5 -30,-23.5 C-30,-23.5 -23.062000274658203,-23.5 -18.375,-23.5 C-17.48200035095215,-23.5 -15.737000465393066,-24.163000106811523 -15.072999954223633,-24.760000228881836 C-13.395000457763672,-26.267000198364258 -12.163999557495117,-28.226999282836914 -10.491000175476074,-29.739999771118164 C-9.883999824523926,-30.288999557495117 -8.194000244140625,-30.875 -7.375,-30.875 C-2.312999963760376,-30.875 0.8119999766349792,-30.875 6.375,-30.875 C7.175000190734863,-30.875 8.817000389099121,-30.256000518798828 9.428999900817871,-29.740999221801758 C11.255000114440918,-28.20400047302246 12.71399974822998,-26.257999420166016 14.574000358581543,-24.761999130249023 C15.32800006866455,-24.1560001373291 17.156999588012695,-23.5 18.125,-23.5 C22.812000274658203,-23.5 30,-23.5 30,-23.5 C33.31399917602539,-23.5 36,-20.81399917602539 36,-17.5 C36,-17.5 36,-17.5 36,-17.5 C36,-17.5 36,17.5 36,17.5 C36,20.81399917602539 33.31399917602539,23.5 30,23.5 C30,23.5 15.138999938964844,23.5 0.20900000631809235,23.5">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <!-- <img src="./assets/img/icon_camera__bjabd907c0j6_large.png"> -->
+          </div>
+          <p>Our most advanced dual‑camera system ever.</p>
+        </div>
+        <div class="color-representation-content--2 features">
+          <div class="icon-wrapper">
+            <img src="./assets/img/icon_durability__evkg7cnj10a6_large.png" />
+          </div>
+          <p>Durability that’s front and center. And edge to edge.</p>
+        </div>
+        <div class="color-representation-content--3 features">
+          <div class="icon-wrapper">
+            <img src="./assets/img/icon_chip__baf6q8pri9cy_large.png" />
+          </div>
+          <p>A lightning-fast chip that leaves the competition behind.</p>
+        </div>
+        <div class="color-representation-content--4 features">
+          <div class="icon-wrapper">
+            <img src="./assets/img/icon_battery__ir0j8i6fc0uq_large.png" />
+          </div>
+          <p>A huge leap in battery life you’ll notice every day.</p>
+        </div>
+      </div>
+    </div>
+    <div class="color-representation-lower">
+      <div class="color-representation-lower-media"></div>
+      <div class="color-representation-lower-content">
+        <div class="lower-content-headline">
+          <h1 id="headline1">iPhone 13</h1>
+          <h2 id="headline2">Your new superpower.</h2>
+        </div>
+        <div class="lower-content-paragraph">
+          <p>From $29.12/mo. for 24 mo. or $699 before trade-in</p>
+          <ul>
+            <li>Watch the film</li>
+            <li>Watch the event</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__spec-information">
+
+    <div class="specFirstColumn">
+
+      <div class="colorOption">
+        <div class="pinkOption"></div>
+        <div class="blueOption" id="blueOption" onclick="blueSelected()"></div>
+        <div class="blackOption" id="blackOption" onclick="blackSelected()"></div>
+        <div class="silverOption" id="silverOption" onclick="silverSelected()"></div>
+        <div class="redOption" id="redOption" onclick="redSelected()"></div>
+      </div>
+
+      <div class="newPinkFinish" id="first">
+        <h4><span id="firstSpan">New</span> <br>
+          <span id="firstColor">Pink</span> <br>
+          finish
+        </h4>
+      </div>
+
+      <div class="ceramicShield" id="second">
+        <img
+          src="https://www.apple.com/v/iphone-13/c/images/overview/design/icon_ceramic_shield__djb87ha8lqc2_large.png"
+          alt="">
+        <h4>Ceramic Shield, <br> <span id="secondSpan">tougher</span> than any <br> smartphone glass</h4>
+      </div>
+
     </div>
 
-    <section class="section__intro">
+    <div class="specSecondColumn">
+      <div class="specSizes" id="third">
 
-    </section>
+        <div class="specSizesTogether">
 
-    <section class="section__spec-information">
+          <div class="specSizes13">
+            <h3>iPhone 13</h3>
+            <div class="specSizes13Img">
+              <img id="thirdimg1"
+                src="https://www.apple.com/v/iphone-13/c/images/overview/design/pink_iphone_13__egoff4sr4fma_large.jpg"
+                alt="">
+            </div>
+            <strong id="thirdSpan" class="specScreen">6.1<span>″</span></strong>
+          </div>
 
-    </section>
+          <div class="specSizesMini">
+            <h3>iPhone 13 Mini</h3>
+            <div class="specSizesMiniImg">
+              <img id="thirdimg2"
+                src="https://www.apple.com/v/iphone-13/c/images/overview/design/pink_iphone_13_mini__fxll8di8wgqe_large.jpg"
+                alt="">
+            </div>
+            <strong id="thirdSpan2" class="specScreen">5.4<span>″</span></strong>
+          </div>
 
-    <section class="section__color-representation">
-      
-    </section>
-  </body>
+        </div>
+
+        <h3 class="specSuper">Super Retina XDR display<sup>2</sup></h3>
+
+      </div>
+
+      <div class="specDurable" id="fourth">
+        <h3><span id="fourthSpan">Durable</span> <br>
+          flat-edge <br>
+          design</h3>
+      </div>
+    </div>
+
+    <div class="specWater" id="fifth">
+    </div>
+
+  </section>
+
+  <section class="section__huge-camera">
+    <h3 id="howdidwe">How did we get such a <span>huge camera upgrade</span> to fit?
+    </h3>
+    <img id="howdidImage" src="./assets/img/upgrade_diagonal_static__bzgjgic29336_large-removebg.png" alt="">
+    <p id="thinking">By thinking diagonally</p>
+  </section>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+  <script type="text/javascript" src="./assets/source/index.js"></script>
+  <script src="./assets/source/app.js"></script>
+
+</body>
+
 </html>
