@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.5,
   })
     .setTween(timline7)
-    .addIndicators({ name: "headine1 (duration: 400)" })
+    // .addIndicators({ name: "headine1 (duration: 400)" })
     .addTo(controller)
     .reverse(true);
   const scene_lowercontenth2 = new ScrollMagic.Scene({
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.4,
   })
     .setTween(timline8)
-    .addIndicators({ name: "headine2 (duration: 400)" })
+    // .addIndicators({ name: "headine2 (duration: 400)" })
     .addTo(controller)
     .reverse(true);
   const scene_lowercontentpg = new ScrollMagic.Scene({
@@ -190,7 +190,40 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.3,
   })
     .setTween(timline9)
-    .addIndicators({ name: "paragraph (duration: 400)" })
+    // .addIndicators({ name: "paragraph (duration: 400)" })
+    .addTo(controller)
+    .reverse(true);
+
+	/* ******************************************** cinematicMode   */ 
+
+const timline10 = new gsap.timeline();
+
+timline10
+.to(('#columnp-1'),3,{y:-10,opacity:0,},3)
+.fromTo(('#columnp-2'),3,{y:-150, opacity:0},{y:-160,opacity:1})
+.to(('#columnp-2'),3,{y:-170,opacity:0},">+2")
+.to(('#row--columnpg'),3,{y:-10,opacity:0},"<")
+.to(("#video-editor"),5,{scale:1},">+1")
+.to(("#video-border"),5,{scale:1, opacity:1},"<")
+.to((".black-rounded"),5,{opacity: 1},"<")
+.to((".black-rounded"),5,{scale: 1},"<")
+.to(("#cinematic-video"),5,{scale:0.5, },">-3")
+.to(("#video-editor"),5,{opacity:1},"<")
+
+
+
+// .to(('.framegroup-flex-img'), 3, { scale: 0.7, transformOrigin: "center top",})  
+
+const scene_cinematic1 = new ScrollMagic.Scene({
+    triggerElement: ".cinematicMode__framegroup-flex",
+    triggerHook: 0.1,
+    duration: 1400,
+  })
+  	.setPin(".cinematicMode__framegroup-flex")
+    .setTween(timline10)
+    .addIndicators({ name: "menandwoman (duration: 100%)" })
     .addTo(controller)
     .reverse(true);
 });
+
+// https://www.apple.com/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/cinematic-mode/large.mp4
