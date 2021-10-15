@@ -174,6 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.5,
   })
     .setTween(timline7)
+    // .addIndicators({ name: "headine1 (duration: 400)" })
     .addTo(controller)
     .reverse(true);
   const scene_lowercontenth2 = new ScrollMagic.Scene({
@@ -181,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.4,
   })
     .setTween(timline8)
+    // .addIndicators({ name: "headine2 (duration: 400)" })
     .addTo(controller)
     .reverse(true);
   const scene_lowercontentpg = new ScrollMagic.Scene({
@@ -188,6 +190,46 @@ document.addEventListener("DOMContentLoaded", function () {
     triggerHook: 0.3,
   })
     .setTween(timline9)
+    // .addIndicators({ name: "paragraph (duration: 400)" })
+    .addTo(controller)
+    .reverse(true);
+
+	/* ******************************************** cinematicMode   */ 
+
+const timline10 = new gsap.timeline();
+
+timline10
+.to(('#columnp-1'),4,{y:-10,opacity:0,},"6")
+.fromTo(('#columnp-2'),4,{y:-150, opacity:0},{y:-160,opacity:1})
+.to(('#columnp-2'),5,{y:-170,opacity:0},">8")
+.to(('#row--columnpg'),5,{y:-10,opacity:0},"<")
+.to(("#video-editor"),8,{scale:1},">+2")
+.to(("#video-border"),8,{scale:1, opacity:1},"<+1")
+.to((".black-rounded"),8,{opacity: 1},"<-2")
+.to((".black-rounded"),8,{scale: 1},">-6")
+.to(("#cinematic-video"),8,{scale:0.5,y:-10 },">-4")
+.to(("#video-editor"),8,{opacity:1},"<")
+.to(("#pg-left"),5,{opacity:1, y:-250},"<-2")
+.to(("#pg-right"),5,{opacity:1, y:-250},"<")
+.to(("#pg-left"),5,{opacity:0, y:-300},">+7")
+.to(("#pg-right"),5,{opacity:0, y:-300},"<")
+.fromTo((".framegroup3-content-lower"),5,{opacity:0, y:-380},{opacity: 1, y:-400},">")
+.to((".framegroup3-content-lower"),5,{opacity: 0, y:-420},">+10")
+
+
+
+// .to(('.framegroup-flex-img'), 3, { scale: 0.7, transformOrigin: "center top",})  
+
+const scene_cinematic1 = new ScrollMagic.Scene({
+    triggerElement: ".cinematicMode__framegroup-flex",
+    triggerHook: 0.1,
+    duration: 1600,
+  })
+  	.setPin(".cinematicMode__framegroup-flex")
+    .setTween(timline10)
+    .addIndicators({ name: "menandwoman (duration: 100%)" })
     .addTo(controller)
     .reverse(true);
 });
+
+// https://www.apple.com/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/cinematic-mode/large.mp4
