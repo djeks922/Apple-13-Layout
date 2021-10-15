@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .to(".upper-information", { backgroundColor: "white" });
 
   const timline2 = new gsap.timeline({
-      defaults: {
-        duration: 1, // sets the default duration of each tween to 1s
-        transformOrigin: "center", // sets default transform-origin to center
-        ease: "ease", // sets the default animation timeline to ease
-      },
-    }),
+    defaults: {
+      duration: 1, // sets the default duration of each tween to 1s
+      transformOrigin: "center", // sets default transform-origin to center
+      ease: "ease", // sets the default animation timeline to ease
+    },
+  }),
     timline4 = new gsap.timeline({
       defaults: {
         duration: 1, // sets the default duration of each tween to 1s
@@ -133,31 +133,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // LOWER CONTENT
 
   const timline7 = new gsap.timeline({
-      default: {
-        duration: 3, // sets the default duration of each tween to 1s
-        transformOrigin: "center", // sets default transform-origin to center
-        ease: "ease", // sets the default animation timeline to ease
-      },
-    });
-   const timline8 = new gsap.timeline({
-      default: {
-        duration: 3, // sets the default duration of each tween to 1s
-        transformOrigin: "center", // sets default transform-origin to center
-        ease: "ease", // sets the default animation timeline to ease
-      },
-    });
-   const timline9 = new gsap.timeline({
-      default: {
-        duration: 3, // sets the default duration of each tween to 1s
-        transformOrigin: "center", // sets default transform-origin to center
-        ease: "ease", // sets the default animation timeline to ease
-      },
-    });
+    default: {
+      duration: 3, // sets the default duration of each tween to 1s
+      transformOrigin: "center", // sets default transform-origin to center
+      ease: "ease", // sets the default animation timeline to ease
+    },
+  });
+  const timline8 = new gsap.timeline({
+    default: {
+      duration: 3, // sets the default duration of each tween to 1s
+      transformOrigin: "center", // sets default transform-origin to center
+      ease: "ease", // sets the default animation timeline to ease
+    },
+  });
+  const timline9 = new gsap.timeline({
+    default: {
+      duration: 3, // sets the default duration of each tween to 1s
+      transformOrigin: "center", // sets default transform-origin to center
+      ease: "ease", // sets the default animation timeline to ease
+    },
+  });
 
   timline7.to("#headline1", {
     opacity: 1,
     y: 0,
-	
+
   });
   timline8.to("#headline2", {
     opacity: 1,
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
     opacity: 1,
     y: 0,
   });
-  
+
 
   const scene_lowercontenth1 = new ScrollMagic.Scene({
     triggerElement: ".color-representation-lower-content",
